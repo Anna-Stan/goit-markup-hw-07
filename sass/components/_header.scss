@@ -34,6 +34,16 @@
     color: var(--title-color); transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            color: #2196F3;
+            &:after {
+                    opacity: 1;
+                }
+        }
+    &:focus {
+        color: #2196F3;
+    }
 }
 
 .nav-list-item:not(:last-child) {
@@ -52,15 +62,6 @@
     display: block;
     bottom: 0;
 
-}
-
-.nav-list-link:hover,
-.nav-list-link:focus {
-    color: #2196F3;
-}
-
-.nav-list-link:hover::after {
-    opacity: 1;
 }
 
 
@@ -86,12 +87,14 @@
 
 .header-contact-item+.header-contact-item {
     margin-left: 50px;
+    &:hover{
+            color: #2196F3;
+        }
+    &:focus {
+        color: #2196F3;
+    }
 }
 
-.header-contact-link:hover,
-.header-contact-link:focus {
-    color: #2196F3;
-}
 
 .contact-icon {
     fill: currentColor;

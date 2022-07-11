@@ -25,16 +25,19 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &:hover {
+            background-color: #2196F3;
+        }
+    &:focus {
+        background-color: #2196F3;
+    }
 
-.masters-soc-link:hover,
-.masters-soc-link:focus {
-    background-color: #2196F3;
 }
 
 
 .masters-list-icons {
     fill: #AFB1B8;
+    
 }
 
 .masters-soc-link:hover .masters-list-icons,
