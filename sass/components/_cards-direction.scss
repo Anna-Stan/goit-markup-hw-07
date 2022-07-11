@@ -1,0 +1,45 @@
+.cards {
+    padding-top: 47px;
+    padding-bottom: 94px;
+}
+
+.cards-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-list-item:not(:last-child) {
+    margin-right: var(--typical-margin);
+}
+
+.cards-list-item {
+    position: relative;
+}
+
+.cards-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-bottom: 50px;
+}
+
+.animation-cards {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    min-width: 370px;
+}
+
+.animation-cards-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 27px 82px 27px 83px;
+}

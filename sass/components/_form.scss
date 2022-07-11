@@ -1,0 +1,68 @@
+.form-telegram {
+    min-width: 570px;
+    height: 86px;
+    margin-left: 93px;
+}
+
+
+.form-telegram-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.form-telegram-position {
+    position: relative;
+}
+
+.input-telegram-form {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+}
+
+.input-telegram-form::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+}
+
+
+
+.form-telegram-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 200px;
+    height: 50px;
+    background-color: rgba(33, 150, 243, 1);
+    border-color: transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.form-logo {
+    margin-left: 10px;
+}
+
+.input-telegram-form:focus {
+    color: rgba(255, 255, 255, 0.6);
+}
