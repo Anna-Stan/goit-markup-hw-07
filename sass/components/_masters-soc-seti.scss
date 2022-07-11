@@ -7,12 +7,11 @@
     width: 44px;
     height: 44px;
     margin-right: 10px;
+    &:last-child {
+            margin-right: 0;
+        }
 }
 
-
-.masters-soc-item:last-child {
-    margin-right: 0;
-}
 
 .masters-soc-link {
     width: 100%;
@@ -27,9 +26,15 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
             background-color: #2196F3;
+            .masters-list-icons {
+                    fill: #FFFFFF;
+                }
         }
     &:focus {
         background-color: #2196F3;
+        .masters-list-icons {
+                fill: #FFFFFF;
+            }
     }
 
 }
@@ -40,7 +45,3 @@
     
 }
 
-.masters-soc-link:hover .masters-list-icons,
-.masters-soc-link:focus .masters-list-icons {
-    fill: #FFFFFF;
-}

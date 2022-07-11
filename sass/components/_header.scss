@@ -52,15 +52,14 @@
 
 
 
-.studio-after::after {
-    position: absolute;
+.studio-after {&:after {position: absolute;
     content: "";
     width: 48px;
     height: 4px;
     background-color: rgba(33, 150, 243, 1);
     border: 1px solid rgba(0, 0, 0, 1);
     display: block;
-    bottom: 0;
+    bottom: 0;}
 
 }
 

@@ -1,5 +1,4 @@
-.antena::before {
-    content: "";
+.antena { &:before {content: "";
     display: block;
     height: 120px;
     background-image: url(../images/Antena.svg);
@@ -8,11 +7,11 @@
     border: 1px solid transparent;
     padding: 25px 100px 25px 100px;
     background-color: #F5F4FA;
-    margin-bottom: 30px;
+    margin-bottom: 30px;}
+   
 }
 
-.clock::before {
-    content: "";
+.clock { &:before {content: "";
     display: block;
     height: 120px;
     background-image: url(../images/clock\ 1.svg);
@@ -21,11 +20,11 @@
     border: 1px solid transparent;
     padding: 25px 100px 25px 100px;
     background-color: #F5F4FA;
-    margin-bottom: 30px;
+    margin-bottom: 30px;}
+   
 }
 
-.diagram::before {
-    content: "";
+.diagram { &:before {content: "";
     display: block;
     height: 120px;
     background-image: url(../images/diagram\ 1.svg);
@@ -34,11 +33,10 @@
     border: 1px solid transparent;
     padding: 25px 100px 25px 100px;
     background-color: #F5F4FA;
-    margin-bottom: 30px;
+    margin-bottom: 30px;}
 }
 
-.astronavt::before {
-    content: "";
+.astronavt {&:before {content: "";
     display: block;
     height: 120px;
     background-image: url(../images/astronaut\ 1.svg);
@@ -47,5 +45,6 @@
     border: 1px solid transparent;
     padding: 25px 100px 25px 100px;
     background-color: #F5F4FA;
-    margin-bottom: 30px;
+    margin-bottom: 30px;}
+
 }
