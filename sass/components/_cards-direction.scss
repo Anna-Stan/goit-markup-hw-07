@@ -8,12 +8,12 @@
     justify-content: space-between;
 }
 
-.cards-list-item:not(:last-child) {
-    margin-right: var(--typical-margin);
-}
 
 .cards-list-item {
     position: relative;
+    &:not(:last-child) {
+            margin-right: var(--typical-margin);
+        }
 }
 
 .cards-title {

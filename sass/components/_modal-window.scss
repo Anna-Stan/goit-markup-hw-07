@@ -15,9 +15,7 @@
     visibility: hidden;
 }
 
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) skew(50deg, 50deg);
-}
+
 
 .modal {
     position: absolute;
@@ -29,6 +27,9 @@
     background-color: #FFFFFF;
     transition: transform 300ms linear;
     padding: 40px;
+    .backdrop.is-hidden & {
+            transform: translate(-50%, -50%) skew(50deg, 50deg);
+        }
 }
 
 .btn-close {
@@ -49,11 +50,12 @@
 
 .modal-close {
     fill: #000000;
+    &:hover {
+            fill: #2196F3;
+        }
 }
 
-.modal-close:hover {
-    fill: #2196F3;
-}
+
 
 .modal-title {
     font-weight: 700;
@@ -80,12 +82,14 @@
     margin-bottom: 10px;
     margin-top: 4px;
     padding-left: 42px;
-
+    &:focus {
+            outline: 1px solid #2196F3;
+            .icon-input {
+                    fill: #2196F3;
+                }
+        }
 }
 
-.modal-input:focus {
-    outline: 1px solid #2196F3;
-}
 
 
 .modal-label {
@@ -105,9 +109,6 @@
     fill: #212121;
 }
 
-.modal-input:focus+.icon-input {
-    fill: #2196F3;
-}
 
 
 
@@ -127,18 +128,18 @@
     &:focus {
             outline: 1px solid #2196F3;
         }
+
+    &:placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    
+    }
     
 }
 
-
-.modal-text::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-
-}
 
 
 .checkbox-text {
@@ -153,22 +154,20 @@
             margin-right: 8px;
             display: inline-block;
         }
+
+        .modal-checkbox-agree:checked+&:before {
+            background-color: #2196F3;
+            border: none;
+            background-image: url(../images/icon-check.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
 }
 
 
 
 
-
-
-
-.modal-checkbox-agree:checked+.checkbox-text::before {
-    background-color: #2196F3;
-    border: none;
-    background-image: url(../images/icon-check.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
 
 
 
