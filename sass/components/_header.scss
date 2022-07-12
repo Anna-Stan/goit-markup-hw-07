@@ -29,7 +29,7 @@
 
 
 
-.nav-list-link {
+.menu__item {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -37,7 +37,6 @@
     color: var(--title-color); transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     &:hover {
             color: #2196F3;
             &:after {
@@ -49,7 +48,7 @@
     }
 }
 
-.nav-list-item:not(:last-child) {
+.menu__item:not(:last-child) {
     margin-right: 50px;
 }
 
