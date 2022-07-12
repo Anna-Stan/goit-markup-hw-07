@@ -4,7 +4,7 @@
 }
 
 
-.client-title {
+.client__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -21,21 +21,15 @@
 
 
 
-
-.client-list-link {
-    border: 1px solid #AFB1B8;
-    border-radius: 5%;
-    width: 170px;
-    height: 92px;
-}
-
-
-
-.client-list-link {
+.client-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 5%;
+    width: 170px;
+    height: 92px;
     transition-property: color, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -52,6 +46,6 @@
 
 
 
-.client-list-logo {
+.client-list__logo {
     fill: currentColor;
 }
